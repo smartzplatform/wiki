@@ -1,0 +1,52 @@
+site_name: Smartz Wiki
+theme:
+  name: 'material'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+markdown_extensions:
+  - admonition
+nav:
+- Home: 'index.md'
+- 'Introduction to Smart Contracts': 'smart-contracts-introduction.md'
+- 'Getting Started with Smartz': 'first-steps.md'
+- 'Smartz Technical WP': 'technical-wp.md'
+- Documentation:
+    - 'Atomic Swap': 'documentation/atomic-swap.md'
+    - 'Bet Me': 'documentation/betme.md'
+    - 'Booking': 'documentation/booking.md'
+    - 'EOS Token': 'documentation/eos-token.md'
+    - 'ERC-20 Token': 'documentation/erc-20-token.md'
+    - 'ERC-721 Token': 'documentation/erc-721-token.md'
+    - 'Invoice': 'documentation/invoice.md'
+    - 'Ledger': 'documentation/ledger.md'
+    - 'Merkle Airdrop': 'documentation/merkle-airdrop.md'
+    - 'Multisignature Wallet': 'documentation/multisignature-wallet.md'
+    - 'Multitoken': 'documentation/multitoken.md'
+    - 'Simple ICO': 'documentation/simple-ico.md'
+    - 'Simple Voting': 'documentation/simple-voting.md'
+    - 'Smartz Token': 'documentation/smartz-token.md'
+- Tutorials:
+    - 'Contract Uploading': 'tutorials/contract-uploading.md'
+    - 'Etherscan Verification': 'tutorials/etherscan-verification.md'
+    - 'Trust Wallet': 'tutorials/trust-wallet.md'
+- Archive:
+    - Russian:
+        - 'Atomic Swap': 'archive/russian/atomic-swap.md'
+        - 'Bet Me': 'archive/russian/betme.md'
+        - 'Booking': 'archive/russian/booking.md'
+        - 'Contract Uploading': 'archive/russian/contract-upload.md'
+        - 'EOS Token': 'archive/russian/eos-token.md'
+        - 'ERC-20 Token': 'archive/russian/erc-20-token.md'
+        - 'ERC-721 Token': 'archive/russian/erc-721-token.md'
+        - 'Etherscan Verification': 'archive/russian/etherscan-verification.md'
+        - 'Invoice': 'archive/russian/invoice.md'
+        - 'Ledger': 'archive/russian/ledger.md'
+        - 'Merkle Airdrop': 'archive/russian/merkle-airdrop.md'
+        - 'Multisignature Wallet': 'archive/russian/multisignature-wallet.md'
+        - 'Multitoken': 'archive/russian/multitoken.md'
+        - 'Simple ICO': 'archive/russian/simple-ico.md'
+        - 'Simple Voting': 'archive/russian/simple-voting.md'
+        - 'Smartz Token': 'archive/russian/smartz-token.md'
+        - 'Trust Wallet': 'archive/russian/trust-wallet.md'
+- Changelog: 'changelog.md'

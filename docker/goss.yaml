@@ -1,0 +1,21 @@
+port:
+  tcp:80:
+    listening: true
+    ip:
+    - 0.0.0.0
+process:
+  nginx:
+    running: true
+http:
+  http://localhost/health:
+    status: 200
+    allow-insecure: false
+    no-follow-redirects: false
+    timeout: 1000
+    body: ['smartz-wiki']
+  http://localhost/:
+    status: 200
+    allow-insecure: false
+    no-follow-redirects: false
+    timeout: 1000
+    body: ['title="Smartz Wiki"']

@@ -1,2 +1,2 @@
-# wiki
-Smartz platform documentation
+# Smartz Platform wiki
+
