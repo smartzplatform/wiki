@@ -16,7 +16,6 @@ nav:
     - 'Atomic Swap': 'documentation/atomic-swap.md'
     - 'Bet Me': 'documentation/betme.md'
     - 'Booking': 'documentation/booking.md'
-    - 'EOS Token': 'documentation/eos-token.md'
     - 'ERC-20 Token': 'documentation/erc-20-token.md'
     - 'ERC-721 Token': 'documentation/erc-721-token.md'
     - 'Invoice': 'documentation/invoice.md'
@@ -31,6 +30,7 @@ nav:
     - 'Contract Uploading': 'tutorials/contract-uploading.md'
     - 'Etherscan Verification': 'tutorials/etherscan-verification.md'
     - 'Trust Wallet': 'tutorials/trust-wallet.md'
+    - 'Contract deploying on EOS': 'documentation/eos-token.md'
 - Archive:
     - Russian:
         - 'Atomic Swap': 'archive/russian/atomic-swap.md'
