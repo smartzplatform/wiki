@@ -1,11 +1,10 @@
-<!-- TITLE: Booking -->
-<!-- SUBTITLE: A quick summary of Booking -->
+# How to deploy a Booking smart contract
 
 This smart contract allows you to rent out various real estate properties to any customers without involving intermediaries. You can just specify all the necessary characteristics of the property (apartment, hotel room, etc.), and your customers will receive a convenient and easy-to-use tool for booking accommodation. Rental prices, terms, cancellation fees and other details are registered in the smart contract itself and stored in the blockchain. 
 
 The landlord creates a separate contract each time, which allows you to specify individual rental conditions. The renter can cancel the booking; however, the owner can set an N-hour period before the actual arrival time. After this period, it will be possible to cancel the booking only upon paying a penalty. Before renting the premises, the customer must confirm that all the claimed characteristics and conditions are true to fact.
 
-# Information necessary to create a smart contract
+## Information necessary to create a smart contract
 
 Go to Smartz.io and specify the following information in the [Booking](https://staging.smartz.io/deploy/5ad08a85eb5e820006467154/0) section:
 
@@ -26,13 +25,13 @@ You can also provide public access to your contract by ticking the Allow public 
 
 Deployed contracts will be available on [Etherscan](https://etherscan.io/) or under [My contracts](https://platform.smartz.io/dashboard).
 
-# Contract information 
+## Contract information 
 
 The following information about the contract that you have created will be available to you:
 
 * contract address on Etherscan.
 
-## View functions
+### View functions
 
 You can use the View functions to obtain information about the status of the contract and details related to any address or other conditions that you should specify. These functions do not make any changes in the blockchain:
 
@@ -49,7 +48,7 @@ You can use the View functions to obtain information about the status of the con
 * **Accept object time** – the period of time during which the customer can confirm the compliance of the property;
 * **Get booking state** – the booking status.
 
-## Write functions
+### Write functions
 
 Write functions are used to change states and values in the smart contract (these functions introduce new information into the blockchain). Each of the following functions consumes some gas: 
 

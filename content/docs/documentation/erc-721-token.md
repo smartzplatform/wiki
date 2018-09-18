@@ -1,5 +1,4 @@
-<!-- TITLE: ERC-721 Token -->
-<!-- SUBTITLE: How to deploy an ERC-721 token -->
+# How to deploy an ERC-721 token
 
 The ERC-721 standart first gained popularity through the CryptoKitties game, which for a while was the most resource-intensive Ethereum network app.
 
@@ -15,7 +14,7 @@ Another difference from ERC-20 is the availability of new functions for smart co
 
 ERC-721 is best suited for digitizing different unique assets with different cost and properties: real estate, intellectual property, works of art, collectibles, etc.
 
-# Information for setting up a smart contract
+## Information for setting up a smart contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the section [ERC721 token](https://smartz.io/deploy/f8df8d0f873c1d21b4302483/0), where you will be asked to specify the following settings for the smart contract:
 
@@ -35,7 +34,7 @@ You can also restrict public access to the contract interface by ticking **Restr
 
 After deployment, you can view the deployed contract at [Etherscan](https://etherscan.io/) or go to the [Dashboard](https://smartz.io/dashboard) to manage the contract.
 
-# View functions
+## View functions
 
 These functions provide information about a contract status and value. 
 
@@ -46,7 +45,7 @@ These functions provide information about a contract status and value.
 *	**Owner**: address of the token owner in Etherscan.
 *	**Token ticker**: abbreviated name of the token.
 
-# Query functions
+## Query functions
 
 Use the query functions to obtain information about the contract status. They allow you to search the account book. The availability of these functions depends on the fields selected during deployment: you can search by each of the selected fields, and also by the record ID. These functions do not make any changes to the blockchain.
 
@@ -59,7 +58,7 @@ Use the query functions to obtain information about the contract status. They al
 *	**Token URI** (`tokenURI`): shows the universal resource identifier (URI) for the given token.
 *	**Is Approved For All** (`isApprovedForAll`): states whether the owner has approved the operator.
 
-# Write functions
+## Write functions
 
 To change the states and values of a smart contract, use the write functions that add new information to the blockchain system. All these functions consume a certain amount of fuel. 
 

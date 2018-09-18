@@ -1,5 +1,4 @@
-<!-- TITLE: Simple ICO -->
-<!-- SUBTITLE: How to Deploy a Simple ICO -->
+# How to Deploy a Simple ICO
 
 Simple ICO is a universal, simple, and reliable smart contract for ICO suitable for fundraising (or other ICO objectives) for companies of any orientation. 
 
@@ -9,7 +8,7 @@ Simple ICO undertakes all issues related to the creation and deployment of smart
 
 You receive ERC20 tokens with the possibility to choose their names, ticker, adjustable sale period and hard cap, as well as adjustable rate for which a set number of ERC20 tokens can be returned for ether.
 
-# Data for smart contract creation
+## Data for smart contract creation
 
 On the Smartz.io platform in [Simple ICO](https://platform.smartz.io/deploy/5aaa7a76ab3d71000bd0c69c/0) page, you need to identify:
 
@@ -29,7 +28,7 @@ The deployment of a contract will be carried out for ETH 0.3 (via MetaMask walle
 
 After deployment on the network, you will be able to look through the deployed contract on Etherscan or proceed to managing the contract in [My contracts](https://platform.smartz.io/dashboard) page.
 
-# Detailed information on contract 
+## Detailed information on contract 
 
 The following information on a created contract is available:
 
@@ -45,10 +44,10 @@ The following information on a created contract is available:
 * **Start timestamp**: start time of ICO in Unix format;
 * **Token address**: ICO token address (this address should be added to wallets to be able to see the tokens balance and manage them).
 
-# View functions
+## View functions
 
 View functions are not avaliable in Simple ICO. 
 
-# Write functions
+## Write functions
 
 Write functions are not avaliable in Simple ICO. 

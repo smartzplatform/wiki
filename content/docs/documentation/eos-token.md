@@ -1,5 +1,4 @@
-<!-- TITLE: EOS Smart Contracts -->
-<!-- SUBTITLE: Deploying Smart Contracts on the EOS Blockchain Using Scatter -->
+# Deploying Smart Contracts on the EOS Blockchain Using Scatter
 
 To create a smart contract that works in EOS, you need to perform several actions:
 
@@ -7,7 +6,7 @@ To create a smart contract that works in EOS, you need to perform several action
 * register in the desired EOS network; we will consider your registration in the CryptoLions testnet: http://dev.cryptolions.io
 * deploy an EOS Simple Token contract on the Smartz platform 
 
-# How to use the Scatter add-on 
+## How to use the Scatter add-on 
 
 ![](/uploads/eos-token/11.jpg)
 
@@ -45,7 +44,7 @@ Complete the fields as shown below:
 
 Save the settings. 
 
-# Register in the test network
+## Register in the test network
 
 ![](/uploads/eos-token/5.png)
 
@@ -61,7 +60,7 @@ Then go back to Scatter. Select **Identities** and **New**. In the window that a
 
 Select the previously added network and your dev.cryptolions.io account, then click **Import** and save the settings. This Identity belongs to the account that will be used to deploy the smart contract.
 
-# Deploy the EOS Simple Token contract
+## Deploy the EOS Simple Token contract
 
 ![](/uploads/eos-token/8.png)
 

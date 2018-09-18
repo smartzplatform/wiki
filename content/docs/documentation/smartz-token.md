@@ -1,9 +1,8 @@
-<!-- TITLE: Smartz Token -->
-<!-- SUBTITLE: A quick summary of Smartz Token -->
+# How to Deploy a Smartz Token -->
 
 A token that supports the ERC20 standard and provides the following additional functions: freezing tokens, destroying tokens, approveAndCall (this function saves the user from having to perform two transactions instead of one with decentralized payments). This is the basic token of the Smartz platform.
 
-# Information necessary to create a smart contract
+## Information necessary to create a smart contract
 
 Go to Smartz.io and specify the following information in the [Smartz token](https://platform.smartz.io/deploy/5abd2628882820000c1ebf56/0) section:
 
@@ -27,7 +26,7 @@ You can also provide public access to your contract by ticking the Allow public 
 
 Deployed contracts will be available on [Etherscan](https://etherscan.io/) or under [My contracts](https://platform.smartz.io/dashboard).
 
-# Contract details 
+## Contract details 
 
 The following information about the contract that you have created will be available to you:
 
@@ -41,7 +40,7 @@ The following information about the contract that you have created will be avail
 * **Token ticker** – the abbreviated name of the token;
 * **Owners** – this feature provides a list of the current wallet owners.
 
-## View functions
+### View functions
 
 You can use the View functions to obtain information on the status of the contract and details related to any address or other conditions that you should specify. These functions do not make any changes in the blockchain:
 
@@ -53,7 +52,7 @@ You can use the View functions to obtain information on the status of the contra
 * **Get n-th owner** (`getOwner`) allows you to get the specified n-th owner;
 * **View allowance** (`allowance`) is used to view the number of tokens that can be spent by another address in accordance with the permission of the specified token owner;
 
-## Write functions
+### Write functions
 
 Write functions are used to change states and values in the smart contract (these functions introduce new information into the blockchain). Each of the following functions consumes some gas: 
 

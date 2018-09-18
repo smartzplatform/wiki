@@ -1,5 +1,4 @@
-<!-- TITLE: Smart Contracts Verification in Etherscan -->
-<!-- SUBTITLE: How to verify smart contract in Etherscan -->
+# How to verify smart contract in Etherscan
 
 Smart contract verification gives everyone the opportunity to perform an independent code audit of your contract and also provides public access to the JSON interface (ABI) of the contract in the [Etherscan](https://etherscan.io/) service.
 

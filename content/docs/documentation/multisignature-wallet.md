@@ -1,5 +1,4 @@
-<!-- TITLE: Multisignature Wallet -->
-<!-- SUBTITLE: How to deploy a multisignature wallet -->
+# How to deploy a multisignature wallet
 
 A wallet with the multisignature function significantly improves security. Before transaction is confirmed by the network, it must be signed with N signatures out of M (M is greater or equal to N).
 
@@ -9,7 +8,7 @@ A multisignature wallet can handle arbitrary N and M, but the lowest possible op
 
 Use case: a family fund that consists of the husband and wife and a third-party trustee (a friend or a grandmother). The fund stores ether, but to withdraw funds, the first person (for example, the husband) creates a withdrawal request, and the second or the third participant (the wife or the grandmother) confirms the withdrawal. In this case, if someone is hacked, the funds will remain intact and they can be withdrawn to another, secure address.
 
-# Data for Creating a Smart Contract
+## Data for Creating a Smart Contract
 
 On Smartz.io platform, in the [Multisignature wallet](https://platform.smartz.io/deploy/5aaa7aa2ab3d71000bd0c69f) page, you need to specify:
 
@@ -23,7 +22,7 @@ The contract will be deployed for 0.05 ether (through the MetaMask wallet).
 
 After network deployment, you can view the deployed contract at Etherscan or manage the contract in the [My contracts](https://platform.smartz.io/deploy/5aaa7aa2ab3d71000bd0c69f) page.
 
-# Detailed Information on the Contract
+## Detailed Information on the Contract
 
 The following information about the created contract is available:
 
@@ -32,7 +31,7 @@ The following information about the created contract is available:
 * **Quorum requirement**: the number of signatures required to perform actions on this wallet;
 * **Owners**: returns the list of all current wallet owners.
 
-# View Functions
+## View Functions
 
 You can use the View functions to obtain information on the status of the contract and the values associated with any address or other conditions that you need to specify. These functions don't make any changes to the blockchain:
 
@@ -40,7 +39,7 @@ You can use the View functions to obtain information on the status of the contra
 * **"Is operation confirmed?"**: checks whether the operation is validated by the owner;
 * **Get n-th owner**: gets the owner number from 0 and above.
 
-# Write Functions
+## Write Functions
 
 To change the states and values of a smart contract, you need to use Write functions that enter new information to the blockchain. All these functions consume some amount of gas.
 

@@ -1,11 +1,10 @@
-<!-- TITLE: Atomic Swap -->
-<!-- SUBTITLE: How to Deploy an Atomic Swap -->
+# How to Deploy an Atomic Swap
 
 With this simple smart contract, two participants can exchange tokens for ether or other tokens. Atomic Swap allows you to quickly and securely exchange one type of cryptoassets with another without involving a third (trusted) party. By interacting directly with each other, participants increase transaction speed, save time and provide a higher level of security.
 
 The smart contract checks if the tokens have been received and in what quantity. If there is an error in the process, the contract rolls the transaction back. 
 
-# Information for creating a smart contract
+## Information for creating a smart contract
 
 At the [Smartz.io](https://platform.smartz.io/) platform, in the [Atomic Swap](https://platform.smartz.io/deploy/5ac50d4e34d83a000d115517) section, you need to specify:
 
@@ -26,7 +25,7 @@ At the [Smartz.io](https://platform.smartz.io/) platform, in the [Atomic Swap](h
     6. **Tokens count**: if you select the ERC20 tokens as the exchange type, you need to specify the number of tokens that participant #2 will exchange.
 * **Verify token transfers**: token transfer verification (checkmarked).
 
-By entering the required data, you will receive the contract code.  
+By entering the required data, you will receive the contract code.
 
 The contract will be deployed for free (for minimal gas transaction through Metamask Wallet).
 
@@ -34,7 +33,7 @@ You can also choose to open public access to the smart contract control panel by
 
 After deploying, you will be able to view the deployed contract at [Etherscan](https://etherscan.io/) or go to contract management in the [My contracts](https://platform.smartz.io/dashboard) section.
 
-# Detailed information on the contract 
+## Detailed information on the contract 
 
 The following information about the created contract is available:
 
@@ -49,7 +48,7 @@ The following information about the created contract is available:
 * **Tokens count of participant #2 (in token wei)**: the number of tokens of participant #2 that will be exchanged for tokens of participant #1 (in minimum units);
 * **Tokens count sent by the participant #2 (in token wei)**: the number of tokens that participant #2 already sent (in minimum units);
 
-# Write functions
+## Write functions
 
 To change the states and values of a smart contract, you need to use the write functions that put new information in blockchain. All these functions consume some amount of gas. 
 

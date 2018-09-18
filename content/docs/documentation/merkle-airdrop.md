@@ -1,5 +1,4 @@
-<!-- TITLE: Merkle Airdrop -->
-<!-- SUBTITLE: How to deploy a Merkle Airdrop smart contract -->
+# How to deploy a Merkle Airdrop smart contract
 
 Merkle Airdrop smart contract is designed to quickly and automatically distribute tokens among any number of project participants.
 
@@ -13,7 +12,7 @@ This contract is very cost-effective, because it only needs one number for an ad
 
 Merkle Airdrop can be used as part of an ICO to pay participants of the bounty campaign, as well as in any other project where you need to process large lists of user addresses and quickly distribute the tokens to the members of the community.
 
-# How to use the contract
+## How to use the contract
 
 To deploy Merkle Airdrop, you need to have or create your own ERC20 token. These tokens will be distributed to users in the future.
 
@@ -23,7 +22,7 @@ To receive tokens, the user's wallet must have a positive balance (0.01 ETH will
 
 The user receives tokens after calling the **Claim my tokens** function in the smart contract interface.
 
-# Information for setting up a smart contract
+## Information for setting up a smart contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the Merkle Airdrop section, where you will be asked to specify the following settings for the smart contract: 
 
@@ -37,7 +36,7 @@ You can also restrict public access to the contract interface by ticking Restric
 
 After deployment, you can view the deployed contract at Etherscan or go to the Dashboard to manage the contract. 
 
-# View functions
+## View functions
 
 These functions provide information about the contract status and value. 
 
@@ -45,7 +44,7 @@ These functions provide information about the contract status and value.
 * **Token contract**: the contract's address in Ethereum.
 * **Airdrop token balance**: the current total number of tokens in the wallet.
 
-# Write functions 
+## Write functions 
 
 To change the states and values of a smart contract, use the write functions that add new information to the blockchain. All these functions consume a certain amount of Ether. 
 

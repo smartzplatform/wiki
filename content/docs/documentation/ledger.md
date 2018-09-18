@@ -1,5 +1,4 @@
-<!-- TITLE: Universal ledger -->
-<!-- SUBTITLE: How to deploy the Ledger smart contract -->
+# How to deploy a Ledger smart contract
 
 A universal ledger is a smart contract used to store various data on distributed nodes. This smart contract is used to store information from various profiles – for example, documents about graduation from an educational institution (diplomas) or professional certificates. If a paper document is lost, you will not need to obtain a duplicate – all data is stored electronically.
 
@@ -15,7 +14,7 @@ In addition, the Ledger is equally convenient to use in the following situations
 * fast application for loans or obtaining an insurance certificate (when all the necessary information for the bank or the insurance company is previously entered into the Ledger);
 * settlement of legal issues of copyright items: storage of data on the ownership of works of specific authors (and the distribution of rights among them), data on purchased and sold works (for consumers of content and owners of rights).
 
-# Usage scenarios
+## Usage scenarios
 
 Let us discuss the usage scenario when the Ledger smart contract is used to verify a university diploma.
 
@@ -27,7 +26,7 @@ Let us discuss the usage scenario when the Ledger smart contract is used to veri
 6) The potential employer uses the control panel to look for the required person by the Full Name field.
 7) The potential employer finds the right person and checks the URL with the scan of the diploma and hash file to make sure the document is authentic.
 
-# Data for the creation of a smart contract
+## Data for the creation of a smart contract
 
 On the Smartz.io platform in the [Ledger](https://platform.smartz.io/deploy/5ada07d44a5ad7000a19d643) section:
 
@@ -56,7 +55,7 @@ The contract is deployed free of charge (via the MetaMask wallet). You can also 
 
 After the deploy, you can view the expanded contract on [Etherscan](https://etherscan.io/) or go to contract management in the section "[My contracts](https://platform.smartz.io/dashboard)".
 
-# Details of the contract 
+## Details of the contract 
 
 The following information about the created contract is available to you:
 
@@ -67,7 +66,7 @@ The following information about the created contract is available to you:
 *	**Records count**: number of entries made ‑ from 0 up;
 *	**Owner**: the address of the contract owner in the Ethereum network.
 
-## View Functions
+### View Functions
 
 You can use view functions to obtain information on the status of the contract. They ensure search inside the ledger. The availability and names of these functions depend on the fields selected during the deploy – you can search by each of the selected fields, as well as by record ID. These functions make no changes to the blockchain.
 
@@ -77,7 +76,7 @@ You can use view functions to obtain information on the status of the contract. 
 *	**Find Student by URL with diploma scan** (`findByUrlWithDiplomaScan`): search for the student using the URL specified in the deploy.
 *	**Find Student by Hash of diploma scan** (`findByHashOfDiplomaScan`): search for the student using a hash (you need to upload the file).
 
-## Write functions
+### Write functions
 
 To change the statuses and values of a smart contract, you need to use the write functions that introduce new information into the blockchain. All these functions consume some amount of gas. 
 

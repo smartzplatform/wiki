@@ -1,7 +1,3 @@
----
-title: Contract uploading
----
-
 # How to upload your smart contract to Smartz platform
 
 A smart contract is a code that runs inside blockchain. The contract can be written in different programming languages and for different blockchains. Now Smartz platform provides smart contract uploading to Ethereum written on Solidity language.
@@ -12,7 +8,7 @@ To upload a smart contract, you need to write a Python constructor that will hav
 
 Below we'll examine the constructor of smart contract we already have: simple voting. This code is used whenever you create a new smart contract regardless of its purpose.
 
-## Formation of Initial Obligatory Values
+## Formation of Initial Values
 
 First, you need to import the necessary functions and declare the class `Constructor`:
 

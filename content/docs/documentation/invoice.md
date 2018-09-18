@@ -1,5 +1,4 @@
-<!-- TITLE: Invoice -->
-<!-- SUBTITLE: How to deploy an Invoice smart contract -->
+# How to deploy an Invoice smart contract
 
 An Invoice smart contract is designed to automate the process of issuing and tracking payment of invoices.
 
@@ -9,7 +8,7 @@ With the help of this contract, one can also provide additional security to the 
 
 Issue invoices to your customers using this flexible and convenient smart contract. It can be used to conduct a transaction or to receive funds from a variety of clients. In the Invoice contract, you set the due dates for the action and also specify the addresses of the wallets to which the funds are distributed under different algorithms of the transaction participants' behaviour.
 
-# Details for creating a contract
+## Details for creating a contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the [Invoice](https://smartz.io/deploy/8907c7a43ee39ec8d4d6bb26/) constructor where you can specify the following smart contract parameters:
 
@@ -28,7 +27,7 @@ You can also restrict public access to the contract interface by ticking **Restr
 
 After deployment, you can view the deployed contract at [Etherscan](https://etherscan.io/) or go to the [Dashboard](https://smartz.io/dashboard) to manage the contract.
 
-# Information about the contract
+## Information about the contract
 
 This is information about the states and values in the contract, which is available in the Dashboard. 
 
@@ -40,7 +39,7 @@ This is information about the states and values in the contract, which is availa
 * **Beneficiary**: the address to which the money will be sent after the invoice is paid.
 * **Partial Receiver**: the address to which the money will be sent from the account after the expiration date, if funds are only partially collected, and not the entire amount.
 
-# Write functions 
+## Write functions 
 
 To change the states and values of a smart contract, use the write functions that add new information to the blockchain. All these functions consume a certain amount of gas.
 

@@ -1,7 +1,3 @@
----
-title: Contract deployment via Trust Wallet
----
-
 # How to use the platform via the Trust Wallet mobile app and integrated Trust Browser wallet
 
 Mobile application makes it possible to easily access the platform "[Trust - Ethereum & ERC20 Wallet](https://trustwalletapp.com/)". This is a wallet for mobile devices, which supports Ethereum, ERC20 and ERC223 tokens. It helps to securely receive, send, and store your digital assets. 
@@ -15,7 +11,7 @@ You can download the app for your device at the following link:
 
 This wallet gives you full control of secret keys, which are stored only on your device.
 
-# 1. Registration of a new wallet
+## Registration of a new wallet
 
 ![](/uploads/trust-wallet/trust1.jpg)
 
@@ -29,7 +25,7 @@ By default, the app works with the primary Ethereum network. In order to test th
 
 Refill your wallet (address is specified in **Wallet** section – press **Send** button) by sending ether from your account to MetaMask or another application, or use the Rinkeby Authenticated Faucet, in order to get test ether for free. Instructions on receiving are specified in our tutorial [Contract deployment](https://wiki.smartz.io/en/simple-ico). 
 
-# 2. Access to smart contracts
+## Access to smart contracts
 
 In a little while you will receive ether on your account. After this go to the **Browser** section and enter the following address: https://platform.smartz.io/.
 

@@ -1,7 +1,3 @@
----
-title: Getting Started with MetaMask
----
-
 # First steps to using the platform on the example of Simple ICO smart contract
 
 To access the platform, you must complete a simple login procedure.
@@ -11,7 +7,7 @@ Go to [smartz.io](https://smartz.io/) and click **Login** button to log in with 
 !!! warning
     The authors are not responsible for any possible losses resulting from your use of the alpha version of the service with an Ethereum wallet. To use our service, you need to connect the Rinkeby test network.
 
-## 1. Creating a test wallet
+## Creating a test wallet
 
 To use the platform, you must install the MetaMask client, which is an Ethereum wallet embedded in your browser. This enables interactions with the Ethereum network without previously installing and synchronizing a full Ethereum node or any other additional software on your PC.
 
@@ -55,7 +51,7 @@ By clicking **Give me Ether**, you can select the required Ether amount. For a o
 
 In a couple of seconds a green text box should appear, which means the transaction was successful.
 
-## 2. Accessing Simple ICO. Step №1
+## Accessing Simple ICO. Step №1
 
 After the ethers are deposited in your account, return to the platform’s home page and click **Deploy for 0.1 ETH** next to the **Simple ICO** contract.
 
@@ -77,7 +73,7 @@ The resulting page will look as follows (example):
 
 Click **Proceed to step 2** at the bottom of the page.
 
-## 3. Accessing Simple ICO. Step №2
+## Accessing Simple ICO. Step №2
 
 Click **Deploy now for 0.1 ETH** on the page that opens.
 
@@ -85,7 +81,7 @@ Click **Deploy now for 0.1 ETH** on the page that opens.
 
 A wallet window then pops up, where you must re-check all the information and click **SUBMIT**.
 
-## 4. Running Simple ICO
+## Running Simple ICO
 
 In a few minutes, your contract will be made available in the network.
 

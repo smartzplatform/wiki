@@ -1,5 +1,4 @@
-<!-- TITLE: BetMe -->
-<!-- SUBTITLE: How to deploy a BetMe smart contract -->
+# How to deploy a BetMe smart contract
 
 BetMe smart contracts are designed to resolve disputes through mediation of the selected arbiter who makes decisions that are binding on all parties. The Disputant (Owner) creates a smart contract that contains a true (in the opinion of the Disputant) statement and then places a bet. The Opponent is against this statement and also places a bet. The value of bet depends on the amount of ether sent.
 
@@ -15,7 +14,7 @@ If no decision is made before the approved deadline, the arbiter may not withdra
 
 BetMe contracts can be used to resolve disputes concerning the results of a match, championships, elections and any other activities. Smart contracts protect against fraud attempts by all disputing parties. The blockchain protects bet amounts and desired results against unauthorised manipulation. The open source code, availability of the contract to any user, as well as automatic performance of agreed terms exclude the influence of the human factor and solve all common problems regarding disputes and betting.
 
-# Information for setting up a smart contract
+## Information for setting up a smart contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the BetMe constructor, where you will be asked to specify the following settings for the smart contract: 
 
@@ -33,7 +32,7 @@ You can also restrict public access to the contract interface by ticking Restric
 
 After deployment, you can view the deployed contract at Etherscan or go to the Dashboard to manage the contract. 
 
-# Information about the contract
+## Information about the contract
 
 This is information about the states and values in the contract, which is available in the Dashboard.
 
@@ -59,7 +58,7 @@ This is information about the states and values in the contract, which is availa
 * **Arbiter claimed payout**: the parameter that specifies whether the arbiter has withdrawn the payment after resolving/cancelling the dispute.
 * **Current timestamp**: the current time.
 
-# Write functions
+## Write functions
 
 To change the states and values of a smart contract, use the write functions that add new information to the blockchain system. All these functions consume a certain amount of ether. 
 

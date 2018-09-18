@@ -1,11 +1,10 @@
-<!-- TITLE: ERC20 Token -->
-<!-- SUBTITLE: How to Deploy a ERC20 Token -->
+# How to Deploy a ERC20 Token
 
 ERC20 is a token standard that has received broad support in the Ethereum blockchain for projects that launch ICO. The standard simplifies the compatibility of tokens with third-party services and on different platforms, as well as for various decentralized applications.
 
 ERC20 describes the token functions that can be implemented in a smart contract and makes it easy to interact with other smart contracts in the blockchain. To handle ERC20 token transactions, you need to use gas purchased for ether.
 
-# Data for Creating a Smart Contract
+## Data for Creating a Smart Contract
 
 On Smartz.io platform, in the [ERC20 token](https://platform.smartz.io/deploy/5aaa7a85ab3d71000bd0c69d/0) page, you need to specify:
 
@@ -25,7 +24,7 @@ The contract will be deployed for 0.1 ether (through the MetaMask wallet).
 
 After network deployment, you can view the deployed contract at Etherscan or manage the contract in the [My contracts](https://platform.smartz.io/dashboard) page.
 
-# Detailed Information on the Contract
+## Detailed Information on the Contract
 
 The following information about the created contract is available:
 
@@ -38,14 +37,14 @@ The following information about the created contract is available:
 * **Owner** (`owner`): the address of the token holder;
 * **Token ticker** (`symbol`): the abbreviated name of the token used on the exchanges.
 
-# View Functions
+## View Functions
 
 You can use the View functions to obtain information on the status of the contract and the values associated with any address or other conditions that you need to specify. These functions don't make any changes to the blockchain:
 
 * **Get balance** (`balanceOf`): find out the token balance at any address;
 * **View allowance** (`allowance`): view the number of tokens that the Address of owner has allowed to spend from another address (Address of spender).
 
-# Write Functions
+## Write Functions
 
 To change the states and values of a smart contract, you need to use Write functions that enter new information to the blockchain. All these functions consume some amount of gas:
 
