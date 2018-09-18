@@ -6,6 +6,7 @@ theme:
     accent: 'teal'
 markdown_extensions:
   - admonition
+  - codehilite
 nav:
 - Home: 'index.md'
 - 'Introduction to Smart Contracts': 'smart-contracts-introduction.md'
