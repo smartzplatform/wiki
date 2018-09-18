@@ -30,7 +30,7 @@ nav:
     - 'Contract Uploading': 'tutorials/contract-uploading.md'
     - 'Etherscan Verification': 'tutorials/etherscan-verification.md'
     - 'Trust Wallet': 'tutorials/trust-wallet.md'
-    - 'Contract deploying on EOS': 'documentation/eos-token.md'
+    - 'Contract deploying on EOS': 'tutorials/eos-token.md'
 - Archive:
     - Russian:
         - 'Atomic Swap': 'archive/russian/atomic-swap.md'
@@ -50,4 +50,5 @@ nav:
         - 'Simple Voting': 'archive/russian/simple-voting.md'
         - 'Smartz Token': 'archive/russian/smartz-token.md'
         - 'Trust Wallet': 'archive/russian/trust-wallet.md'
+- Media Assets: 'media-assets.md'
 - Changelog: 'changelog.md'
