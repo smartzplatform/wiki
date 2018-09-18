@@ -4,7 +4,7 @@ With this simple smart contract, two participants can exchange tokens for ether 
 
 The smart contract checks if the tokens have been received and in what quantity. If there is an error in the process, the contract rolls the transaction back. 
 
-## Information for creating a smart contract
+## Data for Creating a Smart Contract
 
 At the [Smartz.io](https://platform.smartz.io/) platform, in the [Atomic Swap](https://platform.smartz.io/deploy/5ac50d4e34d83a000d115517) section, you need to specify:
 

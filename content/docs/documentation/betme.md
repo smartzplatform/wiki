@@ -14,7 +14,7 @@ If no decision is made before the approved deadline, the arbiter may not withdra
 
 BetMe contracts can be used to resolve disputes concerning the results of a match, championships, elections and any other activities. Smart contracts protect against fraud attempts by all disputing parties. The blockchain protects bet amounts and desired results against unauthorised manipulation. The open source code, availability of the contract to any user, as well as automatic performance of agreed terms exclude the influence of the human factor and solve all common problems regarding disputes and betting.
 
-## Information for setting up a smart contract
+## Data for Creating a Smart Contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the BetMe constructor, where you will be asked to specify the following settings for the smart contract: 
 

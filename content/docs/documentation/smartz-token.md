@@ -2,7 +2,7 @@
 
 A token that supports the ERC20 standard and provides the following additional functions: freezing tokens, destroying tokens, approveAndCall (this function saves the user from having to perform two transactions instead of one with decentralized payments). This is the basic token of the Smartz platform.
 
-## Information necessary to create a smart contract
+## Data for Creating a Smart Contract
 
 Go to Smartz.io and specify the following information in the [Smartz token](https://platform.smartz.io/deploy/5abd2628882820000c1ebf56/0) section:
 

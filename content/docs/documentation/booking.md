@@ -4,7 +4,7 @@ This smart contract allows you to rent out various real estate properties to any
 
 The landlord creates a separate contract each time, which allows you to specify individual rental conditions. The renter can cancel the booking; however, the owner can set an N-hour period before the actual arrival time. After this period, it will be possible to cancel the booking only upon paying a penalty. Before renting the premises, the customer must confirm that all the claimed characteristics and conditions are true to fact.
 
-## Information necessary to create a smart contract
+## Data for Creating a Smart Contract
 
 Go to Smartz.io and specify the following information in the [Booking](https://staging.smartz.io/deploy/5ad08a85eb5e820006467154/0) section:
 

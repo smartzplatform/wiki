@@ -4,7 +4,7 @@ With this smart contract, you can create tokens that are not related to the ERC2
 
 By using tokens in such a contract, you can easily tokenize any objects of the real world, identify and transfer ownership of them.
 
-## Information for creating a smart contract
+## Data for Creating a Smart Contract
 
 At the [Smartz.io](https://platform.smartz.io/) platform, in the [Multitoken](https://platform.smartz.io/deploy/5ac50d5a34d83a000d115518) section, you need to specify:
 

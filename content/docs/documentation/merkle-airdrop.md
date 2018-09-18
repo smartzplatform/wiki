@@ -22,7 +22,7 @@ To receive tokens, the user's wallet must have a positive balance (0.01 ETH will
 
 The user receives tokens after calling the **Claim my tokens** function in the smart contract interface.
 
-## Information for setting up a smart contract
+## Data for Creating a Smart Contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the Merkle Airdrop section, where you will be asked to specify the following settings for the smart contract: 
 

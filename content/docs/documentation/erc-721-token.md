@@ -14,7 +14,7 @@ Another difference from ERC-20 is the availability of new functions for smart co
 
 ERC-721 is best suited for digitizing different unique assets with different cost and properties: real estate, intellectual property, works of art, collectibles, etc.
 
-## Information for setting up a smart contract
+## Data for Creating a Smart Contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the section [ERC721 token](https://smartz.io/deploy/f8df8d0f873c1d21b4302483/0), where you will be asked to specify the following settings for the smart contract:
 

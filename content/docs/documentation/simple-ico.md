@@ -8,7 +8,7 @@ Simple ICO undertakes all issues related to the creation and deployment of smart
 
 You receive ERC20 tokens with the possibility to choose their names, ticker, adjustable sale period and hard cap, as well as adjustable rate for which a set number of ERC20 tokens can be returned for ether.
 
-## Data for smart contract creation
+## Data for Creating a Smart Contract
 
 On the Smartz.io platform in [Simple ICO](https://platform.smartz.io/deploy/5aaa7a76ab3d71000bd0c69c/0) page, you need to identify:
 

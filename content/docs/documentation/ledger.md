@@ -26,7 +26,7 @@ Let us discuss the usage scenario when the Ledger smart contract is used to veri
 6) The potential employer uses the control panel to look for the required person by the Full Name field.
 7) The potential employer finds the right person and checks the URL with the scan of the diploma and hash file to make sure the document is authentic.
 
-## Data for the creation of a smart contract
+## Data for Creating a Smart Contract
 
 On the Smartz.io platform in the [Ledger](https://platform.smartz.io/deploy/5ada07d44a5ad7000a19d643) section:
 

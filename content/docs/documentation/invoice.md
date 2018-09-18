@@ -8,7 +8,7 @@ With the help of this contract, one can also provide additional security to the 
 
 Issue invoices to your customers using this flexible and convenient smart contract. It can be used to conduct a transaction or to receive funds from a variety of clients. In the Invoice contract, you set the due dates for the action and also specify the addresses of the wallets to which the funds are distributed under different algorithms of the transaction participants' behaviour.
 
-## Details for creating a contract
+## Data for Creating a Smart Contract
 
 Log in to your MetaMask wallet. Then log in to the Smartz.io platform and go to the [Invoice](https://smartz.io/deploy/8907c7a43ee39ec8d4d6bb26/) constructor where you can specify the following smart contract parameters:
 
