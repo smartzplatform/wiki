@@ -27,13 +27,17 @@
 ## Banners
 
 ![](/uploads/media-assets/thumbs/smartz-fractal-1.jpg)
+
 [Full size jpg](/uploads/media-assets/smartz-fractal-1.jpg)
 
 ![](/uploads/media-assets/thumbs/smartz-fractal-2.jpg)
+
 [Full size jpg](/uploads/media-assets/smartz-fractal-2.jpg)
 
 ![](/uploads/media-assets/thumbs/smartz-fractal-3.jpg)
+
 [Full size jpg](/uploads/media-assets/smartz-fractal-3.jpg)
 
 ![](/uploads/media-assets/thumbs/smartz-fractal-4.jpg)
+
 [Full size jpg](/uploads/media-assets/smartz-fractal-4.jpg)
