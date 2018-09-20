@@ -1,4 +1,4 @@
-![](/uploads/media-assets/smartz-fractal-main.jpg)
+![](/uploads/media-assets/smartz-main.jpg)
 
 Our mission is to make smart contracts a simple and accessible tool for every person. To provide access to the digital economy values to the general public, to give a powerful impetus to let the blockchain technology enter into the masses. Here you can find tutorials about using the platform, smart contracts deployment and uploading your own constructor of smart contracts.
 
