@@ -264,11 +264,11 @@ deploy('ForeignBridge', network=EthereumMainnet);
 deploy('HomeBridge', network=POACore);
 ```
 
-# Contract Management
+## Contract Management
 
 The basic mechanics of contract management are described in the "Interaction with Smart Contracts" section. Here we are going to focus on the additional benefits that Smartz provides.
 
-## Custom DApps
+### Custom DApps
 
 In a simple case, the user interface of a constructor instance is generated automatically based on the programming interface and additional prompts from the developer; this process is described above. This may be insufficient to provide a rich and convenient DApp. Smartz provides developers with the opportunity to upload and provide a fully-fledged DApp UI based on javascript or TypeScript. This approach gives maximum freedom to developers, even though it requires special attention at the audit stage. We do not consider it advisable to be complacent with half-complete measures (e.g. designing an intermediate abstraction that is a limited set of overridden graphic primitives and operations) because this will ultimately require more effort and will most likely fail to solve the initial task.
 
@@ -294,7 +294,7 @@ To prevent custom DApps from impacting each other or the platform, they will be 
 
 Static resources (e.g. images and CSS) should be placed into a "static" subdirectory; they will be automatically placed onto Smartz servers and made available in the DApp interface with an appropriate filepath that starts with `/static/`.
 
-## Local DApps
+### Local DApps
 
 In order to completely eliminate user dependency from Smartz platform, the interface of any user-launched DApp or any DApp accessible to the user may be later downloaded from the platform and saved locally in a fully operational state (there's no point in saving the other DApp component — contracts because they're executed in relevant blockchains).
 
@@ -310,7 +310,7 @@ In one instance, the static part may be published on the web, and in the other i
 
 Local DApps are provided with integrity control mechanisms described in the previous section.
 
-## Control Panels
+### Control Panels
 
 Custom DApps are not closely connected with the specific constructor instance, but rather adapted dynamically based on the information about the instance (see Custom DApps), and interfaces and smart contract code may be open-source. Owing to these factors, the developer has an opportunity to develop DApp interfaces for the contracts created by other developers.
 
@@ -322,7 +322,7 @@ No smart contracts are compiled at this step; instead, a `post_construct` method
 
 The further mechanics are similar to those previously described. The platform assembles a DApp interface, and in the case of a web interface, the platform adds the required data stored in Smartz (contract coordinates etc). In the case of a local DApp, the assembled application and user input data will be output as an archive.
 
-## Custom DApp Marketplace
+### Custom DApp Marketplace
 
 Dashboards will also receive a dedicated marketplace that is similar to the marketplace for constructors. Developers may create DApp interfaces for the contracts created by other developers.
 
@@ -331,17 +331,17 @@ There are many examples of these dashboards:
 * A dashboard for managing specific popular tokens. It is basically an opportunity to create a "better" wallet that is specific for any given token and based on its mechanics that otherwise can't be obtained through the ERC20 interface. Such a dashboard will certainly contain information about token contract coordinates.
 * Dashboard for ERC20 tokens. It is more convenient and information-rich than a traditional Mist interface.
 
-## Contract System Management
+### Contract System Management
 
 The concept of contract system management is not significantly different from managing an individual contract as described above. As concerns automatically generated interfaces, they are generated for each specific contract in the system. Besides, the platform provides an opportunity to specify the sequence of interfaces constituting the systems and the structure of a general dashboard for the system. In the case of a custom DApp, the application can access all the required data (user data, input data, coordinates of the contracts etc.), and the author of the DApp may freely arrange the interface in the system.
 
 Transactions may be sent to an appropriate contract in the appropriate blockchain by means of a relevant client library, using the blockchain parameters, address and contract interface.
 
-# Platform
+## Platform
 
 In addition to providing the previously described functions of design and DApp management, the platform is a rich web portal.
 
-## Authentication
+### Authentication
 
 A number of various user authentication methods will be supported.
 
@@ -358,15 +358,15 @@ Administrators will have access to the "Login As" feature that enables obtaining
 
 Optional support of two-factor authentication is provided via Google Authenticator.
 
-## Notification Engine
+### Notification Engine
 
 An internal `notify(user, subject, message)` engine will be implemented.
 
 The user will be able to setup notifications display (in the platform interface, by email, in Telegram) in their profile. This engine will be used by various Smartz subsystems.
 
-## Key Entities
+### Key Entities
 
-### Groups
+#### Groups
 
 Rights management within the platform is performed by means of the following groups:
 
@@ -377,7 +377,7 @@ Rights management within the platform is performed by means of the following gro
 * contract moderators
 * partner moderators
 
-### Constructor
+#### Constructor
 
 Constructors are created by developers. Key functions — creation, state modification, viewing.
 
@@ -398,15 +398,15 @@ Author may perform the following state modifications:
 
 Constructor fields include "tags" — single-word, phrases (less commonly), constructor specifications provided by the author that users may use to perform a highly relevant constructor search, e.g.: multisig, token. Tag input interface is a typical tag input string containing prompts. Prompts will be implemented by means of [AnalyzingInfixSuggester](https://lucene.apache.org/core/7_2_1/suggest/org/apache/lucene/search/suggest/analyzing/AnalyzingInfixSuggester.html). Sorting — based on usage (input into constructors) frequency.
 
-### Constructor Instance
+#### Constructor Instance
 
 Stores information about the constructor launched, the users that launched it, constructor details (parameters, obtained interfaces etc.), contract coordinates.
 
-### Constructor Launch Statistics
+#### Constructor Launch Statistics
 
 Registers any launch of a constructor in blockchain. Contains constructor instances and information about the rewards paid to platform and developer.
 
-## Moderation
+### Moderation
 
 There are three moderated entities: developers, constructors, partners. They all share a single behaviour.
 
@@ -437,9 +437,9 @@ There's also individual working logic:
 * For construction creation — state modified, notification sent
 
 
-## Marketplace
+### Marketplace
 
-### List of constructors
+#### List of constructors
 
 Within the platform, a single logic exists that handles the request for the list of constructors. It performs:
 
@@ -456,7 +456,7 @@ Within the platform, a single logic exists that handles the request for the list
 
 **User: list of constructors launched by this user**. List of launched constructors sorted by date, with page-by-page iteration and links.
 
-### Statistics
+#### Statistics
 
 **User statistics**. Statistics of launches performed by a specific user.
 Summary statistics for constructors (constructor => (launches, money)).
@@ -467,7 +467,7 @@ Each number of launches is expandable into the list of launches.
 Summary statistics for constructors (constructor => (launches, money)).
 Summary statistics by month (month => (constructor => (launches, money))).
 
-### Top Constructors
+#### Top Constructors
 
 Automatic ratings for constructors will be implemented.
 
@@ -478,7 +478,7 @@ Automatic ratings for constructors will be implemented.
 
 And the editorial list which is compiled manually. All top constructors — max. 10 contracts per constructor.
 
-### Rating System
+#### Rating System
 
 Constructors and developers are automatically assigned a rating based on user scores. The rating system uses a ten-to-one scale. Ratings are displayed as 5 stars where some stars may be greyed out. If a score is an odd number, only half of a star may be greyed out. Only users that launched the specified constructor or a constructor by the specified developer may leave their scores.
 
@@ -506,17 +506,17 @@ where `sum` performs a summing of all scores,
 
 `actuality_baseline` is the window of relevance equal to two years (in days).
 
-## Search
+### Search
 
 As a basis for search technology, we use [Elasticsearch](https://www.elastic.co). As well as [Apache Solr](http://lucene.apache.org/solr/) this solution is based on the [Lucene](http://lucene.apache.org) library. Lucene has the best ratio of features, extensibility, reliability and performance among search engines with open source code. Elasticsearch adds horizontal scaling to Lucene and provides reliability and high availability of the search cluster.
 
-### Indexing
+#### Indexing
 
 Three search indexes will be introduced – for constructors, custom DApps, and public pages of developers. The search index consists of documents, which in turn consists of fields (also called properties).
 
 Documents or their changes are sent to indexing via the queue of [Apache Kafka](https://kafka.apache.org).
 
-### Document Analysis
+#### Document Analysis
 
 Document analysis refers to the process of converting a document to a set of terms, each of which is a certain general form of a word (e.g., in the simplest case, a word without an ending, in lower case). For different fields of the document, different analysis approaches are applied. Some fields will be artificial.
 
@@ -524,7 +524,7 @@ For each of the documents, a common search field is created, representing the un
 
 The search will support the morphology of many natural languages; it will be achieved by [analysers](https://github.com/apache/lucene-solr/tree/master/lucene/analysis/common/src/java/org/apache/lucene/analysis) built in Lucene.
 
-### Ranking
+#### Ranking
 
 At the heart of the ranking is the “text ranking” based on the occurrences of words (“terms”) from the search query in the documents, as well as the degree of proximity of words in the phrase, etc. The function [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25) will be used for this purpose.
 
@@ -532,13 +532,13 @@ In addition, we strengthen the importance of the occurrence of query words in th
 
 The numerical rating of constructors, custom DApps and developers will also be included in the search index in the form of "numeric doc values," and their value will affect the ranking. "Numeric doc values" are useful in that it's possible to update them without completely re-indexing the documents.
 
-### Search Suggests
+#### Search Suggests
 
 Search suggests will appear when you enter any information into text fields (e.g. when entering a search query in the search bar or when entering tags). The suggest indexes are separate from the other search indexes and are built on the basis of [finite-state transducer](https://en.wikipedia.org/wiki/Finite-state_transducer).
 
 As mentioned earlier, plans have been made to use "AnalyzingInfixSuggester" in "Lucene", which combines the possibilities of analysis and word search in any part of the phrase.
 
-## Recommendation System
+### Recommendation System
 
 By leveraging the capacities of machine learning, the recommendation system is designed to maximise the level of user satisfaction and the income of developers and the platform, by offering variants of constructors and DApps which may be of interest to the user.
 
@@ -548,9 +548,9 @@ The recommendations primarily relate to shopping, i.e. "people who bought this a
 
 In addition, while the user views the pages on the platform online, we create recommendations based on the text and tags in the constructors and DApps that the user viewed through the "Content Similarity" algorithm. To this end, the technique of semantic vectors loaded into the RAM of servers will be used.
 
-## High Availability and Fault Tolerance
+### High Availability and Fault Tolerance
 
-### Definitions and Requirements
+#### Definitions and Requirements
 
 The Smartz infrastructure that performs calculations and stores data is divided into two categories: online and offline.
 
@@ -561,13 +561,13 @@ Reliable data storage is imperative: no information stored within the Smartz pla
 
 There are stateful and stateless services. If a service is stateless, it consists exclusively of its code or executable files, which are obtained as a result of assembling from the source code repository. Such services can be easily transferred from one server to another, and they can be easily duplicated and scaled horizontally. On the other hand, a clear example of a stateful service is a database. Stateful services require additional effort and more complex approaches to ensure their availability and reliability.
 
-### Geographic Availability
+#### Geographic Availability
 
 When talking about replicating a particular service, we need to bear in mind that replication is performed, first, inside the data centre to ensure operational availability in the event of equipment failure within the data center, and, second, in one or more regions to provide protection against network problems at regional level.
 
 If it's not specified otherwise in a particular case, there is no partitioning of any cluster (sharding) between regions – a delay in network interaction would seriously worsen the operation of the cluster. Instead, independent clusters are created in two or more regions, one of which is the master, and the rest are replicas.
 
-### Online Infrastructure
+#### Online Infrastructure
 
 As a whole, the platform uses [Consul](https://www.consul.io) for tasks of Service Discovery, coordination and configuration.
 
@@ -581,11 +581,11 @@ The services for executing constructors and compiling are stateless; they are re
 
 A full-text search cluster based on Elasticsearch also has a built-in scaling and fault tolerance mechanism.
 
-### Offline Infrastructure
+#### Offline Infrastructure
 
 Offline calculations are based on Apache Spark. The Apache Spark cluster is a scalable and fault-tolerant solution on its own that protects against problems within the data centre, such as failures of individual cluster machines. At the same time, this service is stateless: long-term storage of large data is carried out with the help of [Amazon S3](https://aws.amazon.com/s3/) and [Amazon Glacier](https://aws.amazon.com/glacier/) in several geographic regions. If datacenter or the region where the Apache Spark cluster was deployed fails, a new Apache Spark cluster can be deployed and filled with the required data in several hours.
 
-## GDPR
+### GDPR
 
 The personal data stored and processed by the platform include: blockchain addresses, nickname, name, surname, e-mail address, telegram account name. Filling in all these fields is optional; they are displayed in the interface and are used for notifications.
 
@@ -597,9 +597,9 @@ Personal data will be available for the users for editing, full download, comple
 
 Platform servers in all regions are located in separate secure Virtual Private Clouds; only system administrators will have access to them via VPN using the security token. Personal data will be stored in encrypted form. Interaction with the platform will be through the HTTPS protocol with Strict Transport Security enabled.
 
-# Blockchain Support
+## Blockchain Support
 
-## Ethereum
+### Ethereum
 
 For compiling smart contracts, we use several C++ versions of the Solidity compiler: [solc](https://github.com/ethereum/solidity). We analyse `pragma solidity` and choose the most recent version that satisfies the developer's requirement.
 
@@ -608,7 +608,7 @@ To support the client code, we use [MetaMask](https://metamask.io) or [Mist](htt
 To support the work of the API, we raise [our own cluster of Ethereum nodes](https://github.com/smartzplatform/geth) in each geographic region.
 
 
-## EOS
+### EOS
 
 We are actively introducing EOS to the platform and are preparing contracts for it, which we are developing in C++. Smartz templates and compiles the contract code (we use eoscpp from the official repository [eos](https://github.com/EOSIO/eos), gets the wasm code and its abi as the result and gives the contract code to the client for signing and sending to the EOS network.
 
@@ -618,13 +618,13 @@ To send contracts to the EOS network and reliably receive events from the EOS bl
 
 We are registered as candidates for block-producers of EOS mainnet and actively participate in the launch of Jungle3 EOS Testnet. Additionally, we plan to provide users with a reliable service for access to the EOS blockchain.
 
-# Integration of Smart Contracts
+## Integration of Smart Contracts
 
-## Payments
+### Payments
 
 It's extremely convenient to to send payments in bitcoin or other cryptocurrencies to Ethereum or EOS. There are several options for implementing such payments: generalised atomic swap, block transfer and trusted payment gateway.
 
-### Generalized Atomic Swap
+#### Generalized Atomic Swap
 
 This is the development of the atomic swap protocol mentioned earlier. Suppose Alice wants to transfer 2 BTC to Bob in exchange for some action on the Ethereum network (e.g., adding her to the owners of some contract). The sequence of their actions is as follows:
 
@@ -664,7 +664,7 @@ The payment script in the Bitcoin blockchain is supposed to be a Hashed TimeLock
 
 Smartz will be able to generate and run both specified contracts; S will only be known to Bob, and the S hash will be received on the browser side and included in the contracts.
 
-### Trusted Payment Gateway
+#### Trusted Payment Gateway
 
 Interested users (hereinafter in this section referred to as “clients”, and those who want to make a payment will be referred to as “users”) will be able to purchase an off-chain payment support infrastructure along with DApp. Of course, such an infrastructure will require trust from its users; there is a large number of business cases where this is acceptable. Smartz already has such an infrastructure, which is, in essence, a payment gateway.
 
@@ -689,14 +689,14 @@ The described solution has the following advantages.
 7. Adding a cryptocurrency for payment occurs without system downtime because parts associated with different cryptocurrencies work independently.
 8. Charging tokens twice for the same payment transaction is impossible. Payments are produced according to the "exactly once" scheme.
 
-### Block Relay
+#### Block Relay
 
 The block relay approach is that blocks or their headers of one blockchain (for example, Bitcoin) are written as data to another blockchain (for example, Ethereum). Then, smart contracts analyse the blocks programmatically and check their validity, connection, availability and validity of the user-specified transaction (i.e., they are essentially the client of the external blockchain).
 
 Since this payment processing method requires significant resources to maintain copies of the headers of blocks of one blockchain in another, Smartz doesn't view it as a priority. Without the active participation of interested persons, there is a chance of an Eclipse Attack because without active peering with other network members, it cannot be said with sufficient confidence that the blockchain copy contains the main branch.
 
 
-## Events
+### Events
 
 In the course their work, smart contracts generate events. Smartz compiles and uploads contracts into blockchains, so it knows the interfaces of contracts and what events with which type of parameters they generate. Each user can subscribe to events in certain instances of the constructors, unless access rights restrict it.
 
@@ -714,7 +714,7 @@ The platform monitors constructors’ instances started via Smartz in correspond
 
 To implement subscriptions and receive notifications, an API is provided. Notifications are sent via HTTPS to the URL specified by the user before receiving a response with a status of `200`, but no more than a certain number of times. It will also be possible to view past notifications via the API.
 
-## Call Scheduler
+### Call Scheduler
 
 Some blockchains don't have the ability to schedule an automatic transaction when a certain point in time is reached (e.g. to automatically return money blocked in the atomic swap contracts, if the transaction didn't take place within a day). This drawback is compensated by Smartz's call scheduler.
 
@@ -726,7 +726,7 @@ Transactions will be sent from unprivileged accounts. It's possible to send tran
 
 It will be possible to parameterise transaction calls, i.e., transmit pre-configured parameters along with the call. It will also be possible to make conditional calls, and they will be executed only if certain conditions are met, so as not to send unnecessary transactions to the blockchain. In the example above, it makes sense to send a transaction only if the transaction still has the status of unperformed. This can be achieved by configuring calls of constant functions (these calls can also be parameterised) and analysing the results of their execution using the approach described in the previous section.
 
-## IFTTT Integration
+### IFTTT Integration
 
 The mechanics described in the Events and Call Scheduler sections are also an excellent base for integration with [IFTTT](https://ifttt.com). The simplest example of an end result is the playback of a sound by a smart speaker or a Twitter post when the status of a smart contract, placed by the user, changes (for example, when another user has performed a certain transaction). For example, if the user is a landlord, and someone has booked his house through a smart contract, the post "hurray, I have a new resident for May 30!" сan be generated automatically.
 
@@ -734,9 +734,9 @@ Event connection logic is set by the user in IFTTT. Smartz will determine the se
 
 Smartz will also define actions (IFTTT Actions) for smart contracts. The action will be to send transactions, similar to how it was done in the call scheduler. For parameterised transactions, you can specify the action fields. An example of a result would be sending the transaction to the contract by voice command from the user’s smart home.
 
-## Widget API
+### Widget API
 
-## Decentralised audit
+### Decentralised audit
 
 The decentralised audit is particularly important and very complex. Some projects offer solutions around an intuitive idea of linking clients (contract developers) and executors (auditors, security experts) through one or another blockchain, declaring them to be decentralised. At the same time, the devil is in the details, and there are issues that may doom such projects to failure if they are not addressed. How can the customer be guaranteed to attract high-level auditors (audit is not measured in man-hours: 10 mediocre auditors will not replace one expert)? Who will confirm the correctness of the audit and the expediency of paying the reward, and how will this be done? Who will confirm the actions of confirmers, i.e., who will guard the guards, and how? How will automatic audit tools be able to find complex semantic problems if this requires describing the semantics? Similarly, can there also be an error in the course thereof? Failure to solve the above problems doesn't necessarily lead to unsuccessful results of their work, but will require trust in them and third parties. As a means of mitigating the problem, we can suggest a system of reputations. 
 
@@ -755,11 +755,11 @@ If the auditor finds a vulnerability, he/she can try to keep it a secret and exp
 
 Smartz will make individual requirements to the composition, timing and reward of Automatic Bug Bounty of a constructor based on expert assessments and, subsequently, machine learning. The currently running Automatic Bug Bounty will be presented to auditors and crypto-experts in the platform's special information section (and, of course, in the blockchains!), with references to the constructors, verified source code and constructor search capabilities described earlier.
 
-## Decentralised Oracles
+### Decentralised Oracles
 
 The task of Smartz is to facilitate the connection and use of decentralised oracles and in some cases to trim some cost from their use. At the moment, decentralised oracle services are only being developed, e.g., [LINK Network (ChainLink)](https://www.smartcontract.com/link), so you can practice interacting with oracles on the example of their centralised counterparts, such as [Oraclize](http://www.oraclize.it). Smartz will provide easy access to the most popular oracles.
 
-### Smartz Basic Contract Library
+#### Smartz Basic Contract Library
 
 Smartz will provide ready-made basic contracts which are not complete solutions, but auxiliary building blocks, which developers can use to save time on implementing typical functions. This library will be distributed with open source code and will always be available for connection in constructors. A good example of a basic contract is a contract that provides the ether dollar exchange rate through the oracle:
 
@@ -799,12 +799,12 @@ contract MyContract is USDETHOracle(1 hours, 100, 0) {
 
 As you can see, even the problem described by the short phrase "the contract that provides the ether dollar exchange rate" has its parameters and nuances. For example, you can set the limits above, and if the rate exeeds these limits, it will be regarded as a data source failure; the constructor developer can set them at his/her own discretion using the parameters of the constructor function and the same basic contracts. In addition, it is likely that the developer will want to use a different data source or a combination of sources paired with some logic. In this case, they will have to resort to other basic contracts. Smartz doesn't aim to cover all possible scenarios by using ready-made code; instead the platform will provide the most frequently used basic contracts. For example, in the context of the ether rate problem, these can be contracts based on [coinmarketcap](https://coinmarketcap.com) data and also on the quorum data from the open API of several large crypto-exchanges.
 
-### Ready-Made Oracles
+#### Ready-Made Oracles
 
 In addition, there is a reasonable desire to provide the most frequently requested data from the outside world to the blockchains and to do this just once. This is to avoid users having to spend their money again and again to solve the same task, while the blockchains store the minimum amount of data required. Identified based on Smartz statistics, the most current oracle instances (like the above `USDETHOracle (1 hours, 100, 0)`) will be launched by Smartz as separate contracts and be available with open API and open DApps.
 
 
-## Reusing the Code in Blockchains
+### Reusing the Code in Blockchains
 
 Unlike conventional computer programs, to launch each new copy of the contract, one has to pay the blockchain fee, for the fact that the blockchain stores the contract code. At the same time, some code fragments are the same for many contracts (e.g. the code for working with dates and time or the MBDQ code described below).
 
@@ -815,7 +815,7 @@ The use of `selfdestruct` instructions will be prohibited in shared libraries in
 Each library will have its version, and if the developer's requirements coincide with the copy of the library version available in the blockchain, their existing instance will be linked to it.
 
 
-## Integrating Trusted Third Parties and Notaries
+### Integrating Trusted Third Parties and Notaries
 
 We have already cited many examples of contracts that don't require trust of any of the parties. There are also many scenarios with smart contracts involving third parties, which the other two parties trust. The benefit of smart contracts in this case is the transparency and reliability of the infrastructure performing the contract. For example, consider a letter of credit: the buyer wants a trusted party, a bank or a notary, to automatically and atomically transfer his/her money to the seller, once the trusted party makes sure the seller has signed the transfer of ownership documents.
 
@@ -833,7 +833,7 @@ There can be several implementations of such a contract; for example, the notary
 Choosing the desired constructor, the third party (notary, bank, etc.) will be able to mark itself as such on the platform for the selected constructor. When configuring it, the user will be able not only to enter the address, but also to select the third party from the list provided by the platform. To rank this list, Smartz will use the rating system described above. In addition, the availability of these features is not guaranteed for all users of the platform.
 
 
-## Working with External Datasets
+### Working with External Datasets
 
 Smart contracts provide calculations, but what about the data for the calculations? So far, the blockchains are not ready to handle large amounts of data, such as continental weather forecasts or arrays of initial IoT data. But usually, it's not required; to process one request it's enough to know the weather in one city or a section of data from one sensor. To work in this way with external datasets, Smartz proposes using the Merkle-Proof Based Dataset Querying (MBDQ).
 
@@ -862,7 +862,7 @@ In addition, an algorithm can be proposed for loading consecutive ranges of data
 
 Smartz will provide the MBDQ and MBDRQ algorithms in the basic contract library, as well as the open source code for generating the Merkle proof if there is sufficient interest from the community.
 
-### External Dataset Marketplace
+#### External Dataset Marketplace
 
 Developing the idea of working with external datasets, we can offer a marketplace of such sets, replenished on a regular basis. Datasets and constructors should be matched through a dataset interface that guarantees the data structure of the set. For example, the weather dataset interface might look like this:
 
@@ -875,11 +875,11 @@ Developing the idea of working with external datasets, we can offer a marketplac
 
 From the constructor information, it will be known with which dataset interfaces it works, and for each of them it will be possible to request data in the external dataset marketplace. As noted earlier, the initial transfer of the dataset to the contract fixes the root of the Merkle tree. Individual elements of the set should be transferred to the contract in response to the request of the contract either through the oracle or by the supplier services, in any case accompanied by the Merkle proof. It should be understood that there is a need to trust the owners of the set both in the fact that the data will be transferred and that the data is correct. In any case, any transfer of incorrect data or absence of transfer will be recorded in the blockchain.
 
-# Smart Contracts
+## Smart Contracts
 
 The constructors that are already represented on the platform are described below.
 
-## ERC20 token
+### ERC20 token
 
 Implementation of the [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) standard -, the token interface standard:
  - [Source code of the constructor](https://github.com/smartzplatform/SDK/blob/master/constructor_examples/erc20_token_constructor.py)
@@ -896,7 +896,7 @@ The implementation of additional possibilities is also taken from the OpenZeppel
 
 
 
-## Lease
+### Lease
 
 Property lease agreement for ether.
 
@@ -941,7 +941,7 @@ The contract can be in the following states:
   - No transitions to other states
 
 
-## Atomic Ether and ERC20 Token Exchange
+### Atomic Ether and ERC20 Token Exchange
 
 The source code:
 
@@ -962,7 +962,7 @@ General scheme of work:
 Among the constructor features, it's worth mentioning a complex JSON scheme for describing the parameters of the contract. Depending on the choice of options (whether to use the address of the person who starts the contract as the address of one of the participants, to change tokens for ether or tokens), the interface for entering parameters, the interface for configuring the contract changes to show only the fields required.
 
 
-## Registry
+### Registry
 
 The registry contract is used for storing any structured data with the ability to search among them. On its basis, one can organise a certification centre (not to be confused with CA in terms of PKI): for example, the owner of online courses adds certificates for participants who have completed the courses. Information can be open or closed with hashing to prevent others from obtaining a list of graduates from the contract, but each graduate can present information about their certificate to the contract and confirm the completion of the courses. The certificate can be either plain text or a file (e.g., PDF) and can also be accompanied by an address for additional information. In the future, Smartz will provide the ability to place files and maintain them in decentralised repositories, such as [IPFS](https://ipfs.io) or [Swarm](http://swarm-guide.readthedocs.io/en/latest/ introduction.html).
 
@@ -1000,7 +1000,7 @@ function findIdByFullName(bytes32 name) internal view returns (uint256);
 This feature makes it convenient to use this contract not only with the Smartz control panel, but also with other auto-generated control panels, for example in Mist.
 
 
-## Multi-Signature Wallet
+### Multi-Signature Wallet
 
 A wallet with the ability to freeze funds until a certain date, the actions in which require several owners to sign the transaction. The wallet supports both ether and ERC20 compatible tokens.
 
@@ -1026,7 +1026,7 @@ The wallet contract is based on a modified [multiowned] contract (https://github
 
 
 
-## Voting
+### Voting
 
 The contract that implements simple voting in the Ethereum blockchain. This contract is more illustrative, since it's not protected from Sybil Attack.
 
@@ -1046,7 +1046,7 @@ General scheme of work:
   - "getVotesCount", "getVotesCountByName" – to view the number of votes for a particular option
 
 
-## ICO Contract
+### ICO Contract
 
 Simple ICO Contract.
 
@@ -1068,7 +1068,7 @@ General scheme of work:
   - The collected ether is sent to the address specified at the start
 
 
-## Smartz Token
+### Smartz Token
 
 ERC20 token with such additional features as token freezing, i.e. the ability to require passing the KYC procedure before using tokens. The smartz.io project token was launched through this contract constructor.
 
@@ -1091,7 +1091,7 @@ General scheme of work:
 - ICO contracts transfer tokens to clients, indicating the unfreezing date and the need to undergo the KYC procedure.
 - After the unfreezing date, users can use the token like a usual ERC20 token after completing the KYC procedure (if needed).
 
-### General Information
+#### General Information
 
 Functions that require confirmation from several owners use the `multiowned` contract (see the description of the multi-signature wallet contract).
 
@@ -1113,7 +1113,7 @@ interface IApprovalRecipient {
 }
 ```
 
-#### KYC
+##### KYC
 
 A link to the KYC provider address can be set by the owners with a multi-signature. KYCProvider is a smart contract that you need to create yourself, separately. The KYC contract needs to implement the following interface:
 
@@ -1125,11 +1125,11 @@ interface IKYCProvider {
 }
 ```
 
-#### Sales Set
+##### Sales Set
 
 The token has a set of several sale addresses, which have privileged freezing / unfreezing functions. The addresses are added and deleted by the owners with a multi-signature.
 
-### Token Functions
+#### Token Functions
 
 With the functions listed below, one can implement any freezing logic for known dates and any pools.
 
@@ -1140,7 +1140,7 @@ With the functions listed below, one can implement any freezing logic for known 
 5. `setKYCProvider` – setting KYCProvider
 6. `setSale` – setting / removing the sale flag for a given address
 
-### Typical User Story
+#### Typical User Story
 
 - A token is launched
 - KYC contract is launched
@@ -1159,7 +1159,7 @@ With the functions listed below, one can implement any freezing logic for known 
   - the user passes the KYC, and this is recorded by the owners in the KYC contract
   - when the right time comes and when the user passes KYC, he/she will be able to spend the tokens
 
-# Mobile Applications
+## Mobile Applications
 
 The very first mobile app that enabled using Smartz was [Trust Wallet](https://trustwalletapp.com). Plans exist to support others, such as [Toshi](https://www.toshi.org). As noted earlier, Smartz works in any browser-like applications that provide blockchain interfaces (e.g., `web3`).
 
@@ -1173,7 +1173,7 @@ Some difficulties arise with custom DApps which have non-trivial logic. In the m
 
 Notification support is naturally implemented through push notifications.
 
-# Smartz Decentralisation
+## Smartz Decentralisation
 
 TODO
 
