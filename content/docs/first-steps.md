@@ -2,7 +2,7 @@
 
 To access the platform, you must complete a simple login procedure.
 
-Go to [smartz.io](https://smartz.io/) and click **Login** button to log in with your Ethereum signature: you need to unlock MetaMask (or other) extension and sign the transaction. If you don't have MetaMask extension see section "1. Creating a test wallet" for details. After this you’re redirected to the page with available smart contracts.
+Go to [smartz.io](https://smartz.io/) and click **Login** button to log in with your Ethereum signature: you need to unlock MetaMask (or other) extension and sign the transaction. If you don't have MetaMask extension see section "Creating a test wallet" for details. After this you’re redirected to the page with available smart contracts.
 
 !!! warning
     The authors are not responsible for any possible losses resulting from your use of the alpha version of the service with an Ethereum wallet. To use our service, you need to connect the Rinkeby test network.
@@ -33,7 +33,7 @@ After you open the wallet, click the dropdown list in the top left corner to exp
 
 ![5](/uploads/first-steps/5.png "5")
 
-A test network account will then appear. Click the three dots, and copy the address by selecting **Copy Address to clipboard** in the menu.
+A test network account will then appear. Copy the address by selecting field under the **DETAILS** button.
 
 At this time, there are 0 ethers in your newly created wallet. To start testing, you need at least a few ether in your wallet. To do this, you can use what’s known as an Ethereum faucet. For our purposes, we recommend the [Rinkeby Authenticated Faucet](https://faucet.rinkeby.io/).
 
@@ -53,7 +53,7 @@ In a couple of seconds a green text box should appear, which means the transacti
 
 ## Accessing Simple ICO. Step №1
 
-After the ethers are deposited in your account, return to the platform’s home page and click **Deploy for 0.1 ETH** next to the **Simple ICO** contract.
+After the ethers are deposited in your account, return to the platform’s home page and click the deploy button next to the **Simple ICO** contract.
 
 Then you must fill in all the following fields on the next page:
 
@@ -63,19 +63,19 @@ Then you must fill in all the following fields on the next page:
 * Token burning feature (checkbox);
 * ICO start date;
 * ICO end date;
-* Exchange rate — ether token exchange rate (e.g., if you specify 100, this means that 1 Ether will be purchased for 100 tokens);
-* Hard cap — the top limit for fundraising during the ICO;
-* Wallet address.
+* Exchange rate — ether token exchange rate (e.g., if you specify 100, this means that 1 Ether will be purchased for 100 tokens);
+* Hard cap — the top limit for fundraising during the ICO;
+* Funds address.
 
 The resulting page will look as follows (example):
 
 ![9](/uploads/first-steps/13.png "13")
 
-Click **Proceed to step 2** at the bottom of the page.
+Click **Proceed** at the bottom of the page.
 
 ## Accessing Simple ICO. Step №2
 
-Click **Deploy now for 0.1 ETH** on the page that opens.
+Click **Deploy now** on the page that opens.
 
 ![10](/uploads/first-steps/14.png "14")
 
