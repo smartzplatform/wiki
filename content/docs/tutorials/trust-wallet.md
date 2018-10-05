@@ -31,8 +31,9 @@ In a little while you will receive ether on your account. After this go to the *
 
 ![](/uploads/trust-wallet/trust-4.jpg)
 
-You can register (or log in) on the platform the same way as in desktop browser — via Google or Facebook account or by pressing the **Login** button. 
-Contracts can be deployed similarly — according to "[Contract deployment] page (https://wiki.smartz.io/en/simple-ico)". The ether transaction with which you deploy the contract will be reflected in the **Transactions** section of the Trust application.
+You can register (or log in) on the platform the same way as in desktop browser — via Google or Facebook account or by pressing the **Login** button.
+
+Contracts can be deployed similarly — according to "[Contract deployment](https://wiki.smartz.io/en/simple-ico) page ". The ether transaction with which you deploy the contract will be reflected in the **Transactions** section of the Trust application.
 
 ![](/uploads/trust-wallet/trust-5.jpg)
 
