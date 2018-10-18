@@ -14,7 +14,7 @@ before_install:
 
 install:
 - curl -L https://goss.rocks/install | sudo sh
-- sudo pip install awscli
+- sudo pip install awscli==1.16.36
 
 script:
 - /bin/bash docker/label_containers.sh &&
