@@ -20,6 +20,7 @@ Description of smart contracts, that you can already deploy on the platform.
 
 * [Simple Ico](en/simple-ico). Simple and reliable smart contracts system for ICO. You get ERC20 token with custom name, ticker and crowdsale with settable sale period, hardcap and token to ETH rate.
 * [ERC20 Token](en/erc-20-token). Standard ERC20 token with custom name, ticker and optional minting, burning, emission limit, premint and pause functions.
+* [Dividend Token](en/dividend-token). ERC-20 compatible token, representing shares of holders in some DAO, and automatically distributing payments(dividends) between shareholders.
 * [Simple Voting](en/simple-voting). Just simple and robust ballot contract. Suitable for fast cooking crypto-protected voting in any organisation.
 * [Multisignature Wallet](en/multisignature-wallet). Wallet contract to keep your funds under protection of more than one signature. Number of signatures and quorum are adjustable, for example 2/3 or 3/5.
 * [Atomic Swap](en/atomic-swap). Two participants can swap tokens for ETH or tokens with this simple smart contract.
