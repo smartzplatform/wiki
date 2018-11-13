@@ -17,6 +17,7 @@ nav:
     - 'Bet Me': 'documentation/betme.md'
     - 'Booking': 'documentation/booking.md'
     - 'ERC-20 Token': 'documentation/erc-20-token.md'
+    - 'Dividend Token': 'documentation/dividend-token.md'
     - 'ERC-721 Token': 'documentation/erc-721-token.md'
     - 'Invoice': 'documentation/invoice.md'
     - 'Ledger': 'documentation/ledger.md'
