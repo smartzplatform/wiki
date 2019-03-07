@@ -28,7 +28,7 @@ Let us discuss the usage scenario when the Ledger smart contract is used to veri
 
 ## Data for Creating a Smart Contract
 
-On the Smartz.io platform in the [Ledger](https://platform.smartz.io/deploy/5ada07d44a5ad7000a19d643) section:
+On the Smartz.io platform in the [Ledger](https://platform.smartz.io/deploy/dbb0cd98d6fdae3fb65951f5) section:
 
 *	**Instance name**: the name of the smart contract that will be displayed in the My Contracts section;
 *	**Ledger name**: the name of the ledger, for example "Diplomas Ledger";

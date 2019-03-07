@@ -29,7 +29,7 @@
 
 # Данные для создания смарт-контракта
 
-На платформе Smartz.io в разделе [Ledger](https://platform.smartz.io/deploy/5ada07d44a5ad7000a19d643) необходимо указать:
+На платформе Smartz.io в разделе [Ledger](https://platform.smartz.io/deploy/dbb0cd98d6fdae3fb65951f5) необходимо указать:
 
 *	**Instance name**: имя смарт-контракта, которое будет отображаться в разделе My Contracts;
 *	**Ledger name**: имя учетной книги, например «Diplomas Ledger»;
